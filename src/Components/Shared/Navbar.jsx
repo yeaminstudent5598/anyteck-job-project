@@ -4,8 +4,8 @@ const Navbar = () => {
   
 
   return (
-    <div className="bg-gray-900 fixed bg-opacity-80 z-10 text-white py-4">
-      <div className="container mx-auto flex items-center flex-wrap justify-between px-4">
+    <div >
+      <div className="container mx-auto fixed bg-opacity-80 z-10 flex items-center flex-wrap justify-between px-4">
         {/* Logo */}
         <h1>
           <a aria-label="Go to home page" href="/en" rel="home">
@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex items-center"> 
           <nav className="desktop-menu max-lg:hidden" aria-label="Main navigation desktop">
             <ul className="flex space-x-6">
-              <li className="group relative py-3 px-6 border-b border-transparent hover:border-white transition-all duration-500 cursor-pointer">
+              <li className="group text-white relative py-3 px-6 border-b border-transparent hover:border-white transition-all duration-500 cursor-pointer">
                 <span className="flex items-center justify-between">
                   <span>Solutions</span>
                   <svg
@@ -38,22 +38,22 @@ const Navbar = () => {
                   </svg>
                 </span>
                 {/* Dropdown Menu (Example) */}
-                <div className="absolute hidden group-hover:block bg-gray-800 mt-2 py-2 rounded-lg shadow-lg">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-700">
+                <div className="absolute hidden group-hover:block bg-white mt-2 py-2 rounded-lg shadow-lg">
+                  <a href="#" className="block px-4 text-gray-900 py-2 hover:text-blue-600">
                     Solution 1
                   </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-700">
+                  <a href="#" className="block px-4 text-gray-900 py-2 hover:text-blue-600">
                     Solution 2
                   </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-700">
+                  <a href="#" className="block px-4 text-gray-900 py-2 hover:text-blue-600">
                     Solution 3
                   </a>
                 </div>
               </li>
-              <li className="py-3 px-6 border-b border-transparent hover:border-white transition-all duration-500 cursor-pointer">
+              <li className="py-3 px-6 text-white border-b border-transparent hover:border-white transition-all duration-500 cursor-pointer">
                 <a href="#">Service</a>
               </li>
-              <li className="py-3 px-6 border-b border-transparent hover:border-white transition-all duration-500 cursor-pointer">
+              <li className="py-3 px-6 text-white border-b border-transparent hover:border-white transition-all duration-500 cursor-pointer">
                 <a href="#">Contact</a>
               </li>
              
@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
         <button 
                 
-                className="border border-white bg-transparent hover:bg-white hover:text-blue-main hidden max-lg:w-full max-lg:justify-center max-lg:mt-16 pl-6 pr-10 py-[13px] text-res-link lg:text-link lg:flex items-center group/highlight transition-all drop-shadow-button-primary hover:shadow-button-primary rounded-xs"
+                className="border text-white font-bold hover:text-blue-600 border-white bg-transparent hover:bg-white hover:text-blue-main hidden max-lg:w-full max-lg:justify-center max-lg:mt-16 pl-6 pr-10 py-[13px] text-res-link lg:text-link lg:flex items-center group/highlight transition-all drop-shadow-button-primary hover:shadow-button-primary rounded-xs"
               >
                 Contact Us
                 <svg
