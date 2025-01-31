@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <section
       id="home-hero__content__container"
-      className="relative bg-blue-600 p-20 w-full h-auto lg:h-[max(620px,_calc(92vh-49px))] text-white lg:bg-clip-hero-container overflow-hidden pt-[30%] md:pt-[20%] lg:pt-0 max-lg:pb-[15%] clip-path-banner"
+      className="relative bg-blue-600  w-full h-auto lg:h-[max(620px,_calc(92vh-49px))] text-white lg:bg-clip-hero-container overflow-hidden pt-[30%] md:pt-[20%] lg:pt-0 max-lg:pb-[15%] clip-path-banner"
     >
       <div className="container left-40 relative z-10 w-full h-full flex flex-col md:flex-row md:items-center md:justify-between">
         {/* Text Content */}

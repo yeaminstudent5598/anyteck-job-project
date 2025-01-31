@@ -3,3 +3,18 @@
 .clip-path-banner {
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
+
+
+@keyframes moveShape1 {
+  0% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(50px) translateX(20px); } /* Example combined movement */
+  100% { transform: translateY(0) translateX(0); }
+}
+
+@keyframes moveShape1 { /* ... */ }
+@keyframes moveShape2 { /* ... */ }
+@keyframes rotateShape { /* ... */ }
+@keyframes pulse { /* ... */ }
+@keyframes slide { /* ... */ }
+@keyframes scale { /* ... */ }
+@keyframes skewShape { /* ... */ }
