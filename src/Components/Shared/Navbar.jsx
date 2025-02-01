@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   
@@ -50,9 +51,9 @@ const Navbar = () => {
                   </a>
                 </div>
               </li>
-              <li className="py-3 px-6 text-white border-b border-transparent hover:border-white transition-all duration-500 cursor-pointer">
-                <a href="#">Service</a>
-              </li>
+              <NavLink to="service"><li className="py-3 px-6 text-white border-b border-transparent hover:border-white transition-all duration-500 cursor-pointer">
+                Service
+              </li></NavLink>
               <li className="py-3 px-6 text-white border-b border-transparent hover:border-white transition-all duration-500 cursor-pointer">
                 <a href="#">Contact</a>
               </li>
