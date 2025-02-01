@@ -4,17 +4,36 @@
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
-
-@keyframes moveShape1 {
-  0% { transform: translateY(0) translateX(0); }
-  50% { transform: translateY(50px) translateX(20px); } /* Example combined movement */
-  100% { transform: translateY(0) translateX(0); }
+/* Floating animation for SVG patterns */
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-5%, 5%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-@keyframes moveShape1 { /* ... */ }
-@keyframes moveShape2 { /* ... */ }
-@keyframes rotateShape { /* ... */ }
-@keyframes pulse { /* ... */ }
-@keyframes slide { /* ... */ }
-@keyframes scale { /* ... */ }
-@keyframes skewShape { /* ... */ }
+@keyframes float-reverse {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(5%, -5%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Apply animations to SVG elements */
+.animate-float {
+  animation: float 10s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 12s ease-in-out infinite;
+}
